@@ -1,0 +1,1027 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #faf8ff;
+    color: #28143f;
+}
+
+
+
+/* =========================
+   HEADER
+========================= */
+
+.main-header {
+    height: 85px;
+
+    padding: 10px 5%;
+
+    background: #241033;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.book-logo {
+    font-size: 48px;
+    color: #d49aff;
+}
+
+
+.logo-name {
+    font-size: 42px;
+    font-style: italic;
+    color: #d59cff;
+    line-height: 35px;
+}
+
+
+.logo-subtitle {
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+
+.logo-motto {
+    font-size: 12px;
+    font-style: italic;
+    color: #d8b5e8;
+
+    margin-top: 4px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+    padding: 12px 18px;
+
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover,
+nav a.active {
+    background: #e1a8ff;
+    color: #3b155d;
+}
+
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 30px;
+
+    color: #d9a2ff;
+}
+
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 305px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+
+    background:
+        radial-gradient(
+            circle at 20% 40%,
+            #7544a0,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 80% 30%,
+            #8e5abb,
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #28123e,
+            #6d3c91,
+            #291239
+        );
+
+    color: white;
+
+    overflow: hidden;
+}
+
+
+.hero::before {
+    content: "ROMANCE     FANTASY     MYSTERY     HORROR";
+
+    position: absolute;
+
+    left: 3%;
+    top: 55px;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+
+    line-height: 2.8;
+
+    color: rgba(255,255,255,0.18);
+
+    transform: rotate(-8deg);
+
+    letter-spacing: 2px;
+}
+
+
+.hero::after {
+    content: "JUST ONE MORE CHAPTER...";
+
+    position: absolute;
+
+    right: 4%;
+    bottom: 40px;
+
+    font-family: Georgia, serif;
+
+    font-style: italic;
+
+    font-size: 23px;
+
+    color: rgba(255,255,255,0.25);
+
+    transform: rotate(8deg);
+}
+
+
+.hero-overlay {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+}
+
+
+.hero-welcome {
+    font-size: 35px;
+
+    font-style: italic;
+
+    color: #e5b8ff;
+
+    margin-bottom: 5px;
+}
+
+
+.hero h1 {
+    font-size: 52px;
+
+    color: white;
+
+    margin-bottom: 12px;
+
+    text-shadow:
+        0 3px 15px rgba(0,0,0,0.4);
+}
+
+
+.hero-description {
+    font-family: Arial, sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+.hero-decoration {
+    margin-top: 20px;
+
+    color: #e5a8ff;
+
+    font-size: 22px;
+}
+
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-section {
+    max-width: 1170px;
+
+    margin: -36px auto 35px;
+
+    padding: 18px 25px;
+
+    background: linear-gradient(
+        135deg,
+        #7040a0,
+        #4f247c
+    );
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(54, 20, 85, 0.3);
+
+    display: grid;
+
+    grid-template-columns: 1.6fr 0.8fr 0.8fr;
+
+    gap: 20px;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+.search-box,
+.filter-box {
+    height: 54px;
+
+    background: white;
+
+    border-radius: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 20px;
+
+    color: #583078;
+}
+
+
+.search-icon {
+    font-size: 28px;
+
+    margin-right: 10px;
+}
+
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 16px;
+
+    color: #41245b;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.filter-box {
+    gap: 12px;
+}
+
+
+.filter-box span {
+    color: #7540a3;
+
+    font-size: 20px;
+}
+
+
+.filter-box select {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #49305f;
+
+    font-size: 15px;
+
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* =========================
+   SECTION TITLES
+========================= */
+
+.section-title {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+
+.section-title span {
+    color: #9562c7;
+
+    font-size: 22px;
+}
+
+
+.section-title h2 {
+    color: #563083;
+
+    font-size: 36px;
+
+    text-align: center;
+}
+
+
+
+/* =========================
+   FEATURED NOVELS
+========================= */
+
+.featured-section {
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+}
+
+
+.novel-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+.novel-card {
+    background: white;
+
+    border: 1px solid #e4d7ee;
+
+    border-radius: 15px;
+
+    padding: 16px;
+
+    display: flex;
+
+    gap: 20px;
+
+    box-shadow:
+        0 5px 20px rgba(73, 37, 102, 0.1);
+
+    transition: 0.3s;
+}
+
+
+.novel-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(73, 37, 102, 0.18);
+}
+
+
+.novel-card > img {
+    width: 210px;
+
+    height: 305px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    flex-shrink: 0;
+}
+
+
+.novel-content {
+    padding: 8px 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.novel-content h3 {
+    color: #24133b;
+
+    font-size: 27px;
+
+    line-height: 1.2;
+
+    margin-bottom: 12px;
+}
+
+
+.tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 12px;
+}
+
+
+.tag {
+    padding: 7px 15px;
+
+    border-radius: 20px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.fantasy {
+    background: #7040c4;
+    color: white;
+}
+
+
+.romance {
+    background: #f19bc0;
+    color: white;
+}
+
+
+.mystery {
+    background: #d9cdf9;
+    color: #4d3670;
+}
+
+
+.drama {
+    background: #d6c8f2;
+    color: #50367a;
+}
+
+
+.contemporary {
+    background: #d8cff6;
+    color: #513a79;
+}
+
+
+.year {
+    color: #49345f;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    margin-bottom: 12px;
+}
+
+
+.description {
+    color: #493b55;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+
+.read-button {
+    display: block;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    background: linear-gradient(
+        90deg,
+        #7341ae,
+        #8c4ec4
+    );
+
+    color: white;
+
+    padding: 13px 20px;
+
+    border-radius: 25px;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.read-button:hover {
+    transform: scale(1.03);
+
+    background: #552787;
+}
+
+
+.novel-actions {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 5px;
+
+    margin-top: 14px;
+}
+
+
+.novel-actions button {
+    background: transparent;
+
+    border: none;
+
+    color: #5e3981;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* =========================
+   GENRES
+========================= */
+
+.genres-section {
+    max-width: 1180px;
+
+    margin: 30px auto 50px;
+
+    padding: 20px;
+}
+
+
+.genre-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(9, 1fr);
+
+    gap: 12px;
+}
+
+
+.genre-box {
+    min-height: 105px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #f0e8ff;
+
+    color: #59318a;
+
+    cursor: pointer;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    font-family: Arial, sans-serif;
+
+    transition: 0.3s;
+}
+
+
+.genre-box strong {
+    font-size: 30px;
+}
+
+
+.genre-box span {
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.genre-box:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 8px 20px rgba(82, 42, 120, 0.2);
+
+    background: #e6d5ff;
+}
+
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+    max-width: 900px;
+
+    margin: 50px auto;
+
+    padding: 45px 25px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 5px 20px rgba(70, 35, 100, 0.1);
+}
+
+
+.about-section h2 {
+    color: #583184;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+
+.about-section p {
+    font-family: Arial, sans-serif;
+
+    line-height: 1.8;
+
+    color: #5d5365;
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    margin-top: 50px;
+
+    background: #241033;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    position: relative;
+}
+
+
+.footer-logo {
+    color: #d69cff;
+
+    font-size: 24px;
+
+    margin-bottom: 8px;
+}
+
+
+.site-footer > p {
+    font-family: Arial, sans-serif;
+
+    color: #d7c5e5;
+
+    font-size: 14px;
+}
+
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin: 20px 0;
+}
+
+
+.footer-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+}
+
+
+.footer-links a:hover {
+    color: #d69cff;
+}
+
+
+.copyright {
+    font-size: 12px !important;
+
+    color: #a997b6 !important;
+}
+
+
+.footer-ending {
+    position: absolute;
+
+    right: 5%;
+
+    bottom: 30px;
+
+    color: #bd8ce0 !important;
+
+    font-style: italic;
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .main-header {
+        height: auto;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    .header-icons {
+        display: none;
+    }
+
+
+    .search-section {
+        grid-template-columns: 1fr;
+
+        margin-left: 15px;
+
+        margin-right: 15px;
+    }
+
+
+    .novel-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .genre-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .logo-name {
+        font-size: 30px;
+    }
+
+
+    .logo-subtitle {
+        font-size: 14px;
+    }
+
+
+    nav {
+        gap: 4px;
+    }
+
+
+    nav a {
+        font-size: 12px;
+
+        padding: 8px 10px;
+    }
+
+
+    .hero {
+        min-height: 280px;
+    }
+
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+
+    .hero-welcome {
+        font-size: 27px;
+    }
+
+
+    .hero-description {
+        font-size: 15px;
+
+        padding: 0 20px;
+    }
+
+
+    .novel-card {
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .novel-card > img {
+        width: 200px;
+
+        height: 290px;
+    }
+
+
+    .novel-content {
+        width: 100%;
+    }
+
+
+    .tags {
+        justify-content: center;
+    }
+
+
+    .novel-actions {
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+
+    .section-title span {
+        display: none;
+    }
+
+
+    .genre-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .footer-ending {
+        position: static;
+
+        margin-top: 15px;
+    }
+
+}
+.story-cover {
+    display: block;
+    width: 200px;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Make the cover smaller on phones */
+@media (max-width: 600px) {
+    .story-cover {
+        width: 160px;
+        max-width: 70%;
+    }
+}
+.contact-section {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 45px 25px;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(70, 35, 100, 0.12);
+}
+
+.contact-section h2 {
+    color: #583184;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    font-family: Arial, sans-serif;
+    color: #5d5365;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
